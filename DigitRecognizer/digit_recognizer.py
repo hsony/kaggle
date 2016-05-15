@@ -14,6 +14,6 @@ predictions = alg.predict(test)
 
 submission = pd.DataFrame({"ImageId": range(1, test.shape[0] + 1), "label": predictions})
 
-submission.to_csv("kaggle.csv", index = False)
+submission.to_csv("result.csv", index = False)
 
 
